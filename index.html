@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 挑选好图标后 添加至项目 下载到本地 通过link引入  -->
+    <link rel="stylesheet" href="./font_4973591_j21l5owadx/iconfont.css">
+    
+</head>
+<body>
+    <div class="contain">
+        <div class="header">
+            
+        </div>
+        <div class="icon">
+            <span><i class=" iconfont">&#xe63b;</i>/ 购物车</span>
+        </div>
+        <div class="content">
+            <table>
+                <thead>
+                <tr>
+                <th>选中</th>
+                <th>图片</th>
+                <th>单价(元)</th>
+                <th>个数</th>
+                <th>小计(元)</th>
+                <th>操作</th>
+                </tr>
+            </thead>
+                <tbody>  
+                    
+                </tbody>
+            <tfoot >
+                <tr>
+                    <!--这个单元格横跨5个列，即将五个连续单元格合并为一个单元格 内联样式表示单元格内容向右对齐  -->
+                    <td colspan="5" style="text-align:left;">
+                    <label>
+                        <input type="checkbox" id="checkAll" style=" margin-left: 16px ;"> 全选
+                    </label>
+                    </td>
+                    <td>
+                        <div class="right-box">
+          <!-- 所有商品总价 -->
+          <span class="price-box">
+            总价 : ¥<span class="price">24</span></span>
+          <!-- 结算按钮 -->
+          <button class="button pay">结算( 6 )</button>
+        </div>
+                    </td>
+                </tr>
+            </tfoot>
+            </table>
+        </div>
+        
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

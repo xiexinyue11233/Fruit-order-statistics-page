@@ -1,0 +1,107 @@
+/* 清除浏览器默认的样式 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 计算高度和宽度时将边距计算在内 不会使得盒子膨胀 */
+    box-sizing: border-box;
+}
+.contain {
+    /* 内容居中 */
+    margin: 0 auto;
+    max-width: 800px;
+}
+.header {
+    /* center/cover center是居中是background-position的属性值 cover是background-size的属性值 为了让图片等比例铺满*/
+    background: url('../image/fruit.jpg') center/cover no-repeat;
+    height: 263px;
+    border-radius: 10px;
+}
+.icon {
+    height: 50px;
+    line-height: 50px;
+}
+.iconfont {
+  font-size: 25px !important;
+}
+/* 表格铺满父级容器 */
+table {
+  width: 100%;
+}
+/* 把单元格的行内元素水平居中 */
+td,th {
+  text-align: center;
+}
+/* 为了让表格边框连成一条线 */
+table {
+  border-collapse: collapse;   /* 或 separate 均可 */
+}
+tr {
+  /* 设置边框 */
+  border: 1px solid #ccc;      
+}
+th {
+  background: #fafafa;
+}
+td {
+  background: #ffff;
+}
+td img {
+  width: 90px;
+  height: 90px;
+ 
+}
+.del {
+  /* text-align:center只对行内元素/行内块元素生效 在他的父级水平居中 */
+  display:inline-block;
+  width: 60px;
+  height: 30px;
+  background:#cf393f ;
+  color: #fff;
+  line-height: 30px;
+  /*鼠标悬停会变成小手 */
+  cursor: pointer;
+}
+.conut{
+  display: flex;           /* 弹性布局 */
+  align-items: center;     /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  height: 100%;            /* 占满 <td> 高度，确保垂直居中生效  需要知道父级高度才*/
+}
+.conut .subtract {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: #f5f7fa;
+  line-height: 40px;
+}
+.conut .number {
+  width: 60px;
+  height: 40px;
+  border: 1px solid #ccc;
+  line-height: 40px;
+}
+.conut .plus {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: #f5f7fa;
+  line-height: 40px;
+}
+.conut .plus,.conut .subtract {
+  cursor: pointer;
+}
+tfoot tr {
+  height: 60px;
+}
+.pay {
+  color: #fff;
+  background: #3f85ed;
+  margin-left: 20px;
+  border: none;
+  height: 32px;
+  padding: 4px 15px ;
+  border-radius:2px ;
+}
+.show {
+  display: none !important;
+}
